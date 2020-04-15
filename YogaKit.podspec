@@ -22,7 +22,6 @@ podspec = Pod::Spec.new do |spec|
   spec.platform = :tvos
   spec.tvos.deployment_target = '10.0'
   spec.tvos.frameworks = 'UIKit'
-  spec.default_subspec = "Core"
   spec.dependency 'Yoga', '~> 1.14'
   spec.module_name = 'YogaKit'
 
