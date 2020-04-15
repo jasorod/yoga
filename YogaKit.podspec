@@ -19,9 +19,7 @@ podspec = Pod::Spec.new do |spec|
     :tag => spec.version.to_s,
   }
 
-  spec.platform = { :ios, :tvos }
-  spec.ios.deployment_target = '8.0'
-  spec.ios.frameworks = 'UIKit'
+  spec.platform = :tvos
   spec.tvos.deployment_target = '10.0'
   spec.tvos.frameworks = 'UIKit'
   spec.default_subspec = "Core"
