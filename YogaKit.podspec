@@ -15,13 +15,15 @@ podspec = Pod::Spec.new do |spec|
 
   spec.authors = 'Facebook'
   spec.source = {
-    :git => 'https://github.com/facebook/yoga.git',
+    :git => 'https://github.com/jasorod/yoga.git',
     :tag => spec.version.to_s,
   }
 
-  spec.platform = :ios
+  spec.platform = { :ios, :tvos }
   spec.ios.deployment_target = '8.0'
   spec.ios.frameworks = 'UIKit'
+  spec.tvos.deployment_target = '10.0'
+  spec.tvos.frameworks = 'UIKit'
   spec.default_subspec = "Core"
   spec.dependency 'Yoga', '~> 1.14'
   spec.module_name = 'YogaKit'
